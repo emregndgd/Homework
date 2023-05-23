@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+</head>
+<body>
+  <h2>Form Example</h2>
+
+  <form action="process-form.php" method="get" target="_blank">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <form action="process-form.php" method="post" target="_self">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    // Canvas Application
+    window.onload = function() {
+      var canvas = document.createElement("canvas");
+      canvas.width = 400;
+      canvas.height = 400;
+      document.body.appendChild(canvas);
+
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "red";
+      ctx.fillRect(50, 50, 200, 200);
+    };
+  </script>
+</body>
+</html>
